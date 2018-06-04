@@ -80,6 +80,7 @@ $app->post('/webhook', function ($request, $response) use ($bot, $pass_signature
 
         $app->get('/pushmessage', function($req, $res) use ($bot)
         {
+            echo 'assalamualaikum warohmatullahi wabarakatuh';
             // send push message to user
             $userId = 'U70441f098a43efa4fe187a20f00317e5';
             $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
