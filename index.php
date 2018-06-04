@@ -7,6 +7,7 @@ use \LINE\LINEBot\MessageBuilder\MultiMessageBuilder;
 use \LINE\LINEBot\MessageBuilder\TextMessageBuilder;
 use \LINE\LINEBot\MessageBuilder\StickerMessageBuilder;
 use \LINE\LINEBot\SignatureValidator as SignatureValidator;
+use \LINE\LINEBot\MessageBuilder\ImagesMessageBuilder;
  
 // set false for production
 $pass_signature = true;
@@ -76,6 +77,16 @@ $app->post('/webhook', function ($request, $response) use ($bot, $pass_signature
                 }
             }
         }
+
+        $app->get('/pushmessage', function($req, $res) use ($bot)
+        {
+            // send push message to user
+            $userId = 'U70441f098a43efa4fe187a20f00317e5';
+            $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
+            $result = $bot->pushMessage($userId, $textMessageBuilder);
+        
+            return $res->withJson($result->getJSONDecodedBody(), $result->getHTTPStatus());
+        });
  
 });
  
