@@ -1,0 +1,16 @@
+{
+    "name": "ali/botkecebong",
+    "description": "ini hanya sekedar bot sederhana yang menggunakan frame work slim",
+    "type": "Project",
+    "require": {
+        "php": "^7.1",
+        "slim/slim": "^3.10",
+        "linecorp/line-bot-sdk": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "ali",
+            "email": "ali_baidlowi@yahoo.com"
+        }
+    ]
+}
