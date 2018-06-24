@@ -27,9 +27,16 @@ $app = new Slim\App($configs);
  
 // buat route untuk url homepage
 $app->get('/', function($req, $res)
-{
-  echo "Welcome at Slim Framework";
-});
+    {
+    echo "Welcome at Slim Framework";
+    }
+);
+
+$app->get('/ali', function($req, $res)
+    {
+        echo "oke sukses";
+    }
+);
  
 // buat route untuk webhook
 $app->post('/webhook', function ($request, $response) use ($bot, $pass_signature)
