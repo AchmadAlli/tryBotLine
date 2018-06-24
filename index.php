@@ -34,7 +34,7 @@ $app->get('/', function($req, $res)
 
 $app->get('/ali', function($req, $res)
     {
-        echo "oke sukses";
+        echo "alhamdulillah jos";
     }
 );
  
