@@ -13,8 +13,8 @@ use \LINE\LINEBot\MessageBuilder\ImagesMessageBuilder;
 $pass_signature = true;
  
 // set LINE channel_access_token and channel_secret
-$channel_access_token = "ZmPPA58vrybbdMZXTMsEiAtR6VdrFlItHEGXe55UhkctTWxM6icNoqSplR8yq4nAXr4ga7uoeaUE99ATelsvRnWQtnheRXHt+sn65RQqVWeXIrQMqeZosX18CQ9onxN4Nr2sE1hhfMU/6ZksB/8msgdB04t89/1O/w1cDnyilFU=";
-$channel_secret = "4b50bfb4b7f2b9522b4305d8e627bc65";
+$channel_access_token = "";
+$channel_secret = "";
  
 // inisiasi objek bot
 $httpClient = new CurlHTTPClient($channel_access_token);
